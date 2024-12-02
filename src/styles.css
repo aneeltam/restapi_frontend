@@ -1,0 +1,326 @@
+/* General styling */
+
+/* Top Navigation Bar */
+.header {
+  background-color: #4e6149;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header .nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header .nav-links a {
+  text-decoration: none;
+  color: white;
+  background-color: #4e6149;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.header .nav-links a:hover {
+  background-color: #2c3629;
+}
+
+.top-navigation {
+  padding-top: 60px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* App container */
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Search bar styling */
+.search-bar input {
+  padding: 10px;
+  width: 80%;
+  margin: 20px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Movie list */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+  justify-items: center;
+}
+
+/* Individual movie item */
+.movie-item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 380px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+/* Movie details */
+.movie-details p:last-of-type {
+  margin-bottom: 10px;
+}
+
+/* Poster styling */
+.movie-poster {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Movie details */
+.movie-details {
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.movie-details h3 {
+  font-size: 14px;
+  color: #333;
+  margin-top: 0;
+  text-align: center;
+}
+
+.movie-details p {
+  font-size: 12px;
+  color: #777;
+  margin: 4px 0;
+  padding: 0;
+  text-align: center;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+/* Edit Button */
+.edit-movie-button {
+  padding: 8px 12px;
+  background-color: #9caf97;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  max-width: 180px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-decoration: none;
+}
+
+.edit-movie-button:hover {
+  background-color: #889c83;
+}
+
+/* Help page */
+.help-search {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* AddMovieForm Styles */
+.add-movie-form {
+  background-color: white;
+  padding: 30px;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-movie-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.add-movie-form input,
+.add-movie-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+.add-movie-form input:focus,
+.add-movie-form textarea:focus {
+  border-color: #5a6158;
+  outline: none;
+}
+
+.add-movie-form button {
+  background-color: #9caf97;
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-movie-form button:hover {
+  background-color: #889c83;
+}
+
+/* Delete Button */
+.delete-button {
+  padding: 10px 20px;
+  background-color: #e39898;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.delete-button:hover {
+  background-color: #bf7878;
+}
+
+/* Cancel Button */
+.cancel-button {
+  padding: 10px 20px;
+  background-color: #9caf97;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.cancel-button:hover {
+  background-color: #889c83;
+}
+
+.delete-movie-page {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.delete-movie-page .movie-details {
+  display: inline-block;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.delete-movie-page .movie-poster {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.delete-movie-page button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.delete-movie-page button.delete {
+  background-color: #e39898;
+  color: black;
+}
+
+.delete-movie-page button.cancel {
+  background-color: #9caf97;
+  color: black;
+}
+
+/* DeleteMovieList styles */
+.delete-movie-list {
+  text-align: center;
+  gap: 20px;
+}
+
+.delete-movie-list .movie-item {
+  display: inline-block;
+  width: 250px;
+  background-color: #f4f4f4;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.delete-movie-list .movie-poster {
+  width: 150px;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.delete-movie-list .delete-button {
+  padding: 10px;
+  background-color: #e39898;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.delete-movie-list .delete-button:hover {
+  background-color: #bf7878;
+}
+
+.edit-movie-page h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
