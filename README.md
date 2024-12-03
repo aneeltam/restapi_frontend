@@ -1,5 +1,7 @@
-# App for Full Stack Development course by Matleena
+# REST API Project
+## Frontend
 
+App for Full Stack Development course by Matleena
 Published in Render: https://restapimovieapp.onrender.com
 
 
